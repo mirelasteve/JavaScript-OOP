@@ -49,6 +49,35 @@ class LinkedList {
         return this;
 
     }
+    removeAt(index) {
+        this._validateIndex(index);
+
+        if (index === 0) {
+            const result = this.head.value;
+            this.head = this.head.next;
+
+            if (this._length === 1) {
+                this._last = null;
+            }
+
+            this._length--;
+
+            return result;
+        } else {
+            let nodeToRemoveAfter = this._nodeAtIndex(index - 1);
+            const result = nodeToRemoveAfter.next.value;
+            nodeToRemoveAfter.next = nodeToRemoveAfter.next.next;
+
+            if (index === this._length - 1) {
+                this._last = nodeToRemoveAfter;
+            }
+
+            this._length--;
+
+            return result;
+        }
+    }
+}
 }
 
 const list = new LinkedList;
