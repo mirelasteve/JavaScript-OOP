@@ -48,7 +48,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'tsps') || (this.quant == 'teaspoons')) {
-                this.numb = this.numb * 5;
+                this.numb = this.numb / 5;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -79,7 +79,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'pts') || (this.quant == 'pints')) {
-                this.numb = this.numb / 2;
+                this.numb = this.numb * 2;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -94,7 +94,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'tsps') || (this.quant == 'teaspoons')) {
-                this.numb = this.numb * 3;
+                this.numb = this.numb / 3;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -110,7 +110,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'tbsps') || (this.quant == 'tablespoons')) {
-                this.numb = this.numb / 3;
+                this.numb = this.numb * 3;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -134,7 +134,7 @@ class HashNode {
             }
 
             if (this.quant == 'cups') {
-                this.numb = this.numb / 8;
+                this.numb = this.numb * 8;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -151,7 +151,7 @@ class HashNode {
             }
 
             if ((this.quant == 'gals') || (this.quant == 'gallons')) {
-                this.numb = this.numb / 4;
+                this.numb = this.numb * 4;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -175,7 +175,7 @@ class HashNode {
             }
 
             if ((this.quant == 'qts') || (this.quant == 'quarts')) {
-                this.numb = this.numb * 4;
+                this.numb = this.numb / 4;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -192,7 +192,7 @@ class HashNode {
             }
 
             if ((this.quant == 'qts') || (this.quant == 'quarts')) {
-                this.numb = this.numb / 4;
+                this.numb = this.numb * 2;
                 t = (this.arbitN + this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -246,7 +246,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'tsps') || (this.quant == 'teaspoons')) {
-                this.numb = this.numb * 5;
+                this.numb = this.numb / 5;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -277,7 +277,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'pts') || (this.quant == 'pints')) {
-                this.numb = this.numb / 2;
+                this.numb = this.numb * 2;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -292,7 +292,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'tsps') || (this.quant == 'teaspoons')) {
-                this.numb = this.numb * 3;
+                this.numb = this.numb / 3;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -308,7 +308,7 @@ class HashNode {
                 }
             }
             if ((this.quant == 'tbsps') || (this.quant == 'tablespoons')) {
-                this.numb = this.numb / 3;
+                this.numb = this.numb * 3;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -332,7 +332,7 @@ class HashNode {
             }
 
             if (this.quant == 'cups') {
-                this.numb = this.numb / 8;
+                this.numb = this.numb * 8;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -349,7 +349,7 @@ class HashNode {
             }
 
             if ((this.quant == 'gals') || (this.quant == 'gallons')) {
-                this.numb = this.numb / 4;
+                this.numb = this.numb * 4;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -373,7 +373,7 @@ class HashNode {
             }
 
             if ((this.quant == 'qts') || (this.quant == 'quarts')) {
-                this.numb = this.numb * 4;
+                this.numb = this.numb / 4;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -390,7 +390,7 @@ class HashNode {
             }
 
             if ((this.quant == 'qts') || (this.quant == 'quarts')) {
-                this.numb = this.numb / 4;
+                this.numb = this.numb * 2;
                 t = (this.arbitN - this.numb).toFixed(2);
                 if (t > 0) {
                     return (t + ':' + arbitQ + ':');
@@ -417,8 +417,10 @@ for (let i = 0; i < n; i += 1) {
         let arbN = recipe[ingredient].numb;
         let useN = rec[0];
         let con = recipe[ingredient].convertS(arbQ, arbN, usQ, useN);
+        con = con.split(':');
+        recipe[ingredient].numb = con[0];
+        recipe[ingredient].quant = con[1];
 
-        print(con + recipe[ingredient].name);
     } else {
         recipe[ingredient] = new HashNode(rec[2], rec[1], rec[0]);
     }
@@ -444,5 +446,7 @@ for (let key in recipe) {
         if (result) {
             print(result + recipe[key].name);
         }
+    } else {
+        print(recipe[key].numb + ':' + recipe[key].quant + ':' + recipe[key].name);
     }
 }
