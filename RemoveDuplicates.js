@@ -1,4 +1,4 @@
- function ListNode(val) {
+ class ListNode=(val)=> {
      this.val = val;
      this.next = null;
   }
