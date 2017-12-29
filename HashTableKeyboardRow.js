@@ -3,6 +3,24 @@
  * @return {string[]}
  Given a List of words, return the words that can be typed using letters of alphabet on only one row's of American keyboard
  */
+
+/* Short solution*/
+const findWords = (words)=> {
+    let row1 = new Set('qwertyuiopQWERTYUIOP');
+    let row2 = new Set('asdfghjklASDFGHJKL');
+    let row3 = new Set('zxcvbnmZXCVBNM');
+    
+    let isSameRow = function(letters, row) {
+        return letters.every(letter => row.has(letter));
+    }
+    
+    return words.filter((word) => {
+        let letters = word.split('');
+        return isSameRow(letters, row1) || isSameRow(letters, row2) || isSameRow(letters, row3);
+    });
+};
+
+/*Long Solution*/
 const findWords = (words) => {
     let accessWords = [];
     const first = 'qwertyuiop'.split('');
